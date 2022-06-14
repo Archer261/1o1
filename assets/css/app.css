@@ -1,0 +1,176 @@
+body {
+    
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(to bottom right, #b0ff91, #ffffff 30%);
+}
+
+#logo {
+    flex-grow: 1;
+    margin: 15px;
+    left: 80px;
+    bottom: 90%;
+}
+
+#getQuote {
+    border: 3px solid red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border: 2px solid red;
+    align-items: center;
+}
+
+ul, li {
+    display: inline;
+    margin: 0;
+    padding: 10px;
+    max-height: 42px;
+}
+
+ul {
+    flex-grow: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+li {
+    background-color: #5390d9;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+li:hover {
+    background-color: #d09564;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+}
+
+#container div {
+    width: 400px;
+    height: 200px;
+}
+
+#contact-me {
+    background-color: #c7cfd3;
+    width: 90%;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact-form {
+    border: 3px solid red;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-content: space-between;
+
+}
+
+#contact-form input {
+    min-width: 300px;
+    max-width: 600px;
+    margin: 5px;
+}
+
+#contact-form h4 {
+    display: flex;
+    justify-content: center;
+}
+
+#notes {
+    min-width: 300px;
+    max-width: 630px;
+
+    min-height: 50px;
+    max-height: 150px;
+}
+
+
+#container, #contact-me {
+    margin: 10px;
+    border: 4px solid red;
+}
+
+#gmap {
+    display: flex;
+    /*flex-shrink: 1;*/
+    /*flex-grow: 1;*/
+}
+
+
+/*----------------------------------------------------------------*/
+
+
+/* Media Queries*/
+@media  (max-width: 768px){
+    h1{
+        font-size: 4ems;
+        color: purple;
+    }
+
+    #navBar, #navBar ul {
+        flex-direction: column;
+        align-items: center;
+        max-height: 500px;
+        justify-content: space-between;
+
+    }
+
+    #navBar li {
+        margin: 4px;
+    }
+
+    #contact-me {
+        flex-direction: column;
+    }
+
+    #contact-form input {
+        min-width: 150px;
+        max-width: 300px;
+    }
+}
+
+@media  (max-width: 576px){
+    h1{
+        font-size: 3ems;
+        color: purple;
+    }
+}

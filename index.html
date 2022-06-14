@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One of 1ne</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav id="navBar">
+        <a href="#home"><img id="logo" src="./assets/images/logoipsum-logo-24.png" alt="home" /></a>
+        <ul>
+            <li id="nav-services">
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a href="#contact-me">Contact Me</a>
+            </li>
+        </ul>
+        <a id="getQuote" href="#contact-me"><img id="quoteImg" src="./assets/images/button_get-a-quote.png" alt="quote" /></a>
+    </nav>
+    <!--End of Navigation Bar-->
+
+    <header>
+
+        <h1>One of 1ne Painting</h1>
+    </header>
+    <main>
+        <section id="container">
+            <div style="background-color: #80ffdb"></div>
+            <div style="background-color: #64dfdf"></div>
+            <div style="background-color: #48bfe3"></div>
+            <div style="background-color: #5390d9"></div>
+            <div style="background-color: #6930c3"></div>
+        </section>
+
+        <section id="contact-me">
+            <!--Google Map of Location-->
+            <div id="gMap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93902.42768041106!2d-83.36150441129847!3d42.651800167219236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824bfc993245f53%3A0x137932f574e93b0a!2sPontiac%2C%20MI!5e0!3m2!1sen!2sus!4v1655089551658!5m2!1sen!2sus"
+                    display="flex" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!--End of Google Map of Location-->
+
+            <!--Contact Form-->
+            <form id="contact-form">
+                <h4>Contact Me</h4>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="notes">How Can We Help?</label>
+                <input type="textbox" id="notes" placeholder="Let use know what services you are interested in!" name="notes">
+                <br />
+                <input type="submit" value="Submit">
+
+            </form>
+            <!--End Contact Form-->
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>
